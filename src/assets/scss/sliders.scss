@@ -1,0 +1,15 @@
+.slide {
+  background-color: #000;
+  max-height: 500px;
+  overflow: hidden;
+}
+.cus-card {
+  .card-box {
+    img {
+      height: 300px;
+    }
+    .card-body {
+      background-color: #6edcfa;
+    }
+  }
+}
