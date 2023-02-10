@@ -10,4 +10,12 @@ export default {
   catfood: require('../../assets/images/catfood.jpg'),
   fishfood: require('../../assets/images/fishfood.png'),
   petstoy: require('../../assets/images/petstoy.png'),
+  catcartoon: require('../../assets/images/catcartoon.jpg'),
+  dogcartoon: require('../../assets/images/dogcartoon.jpg'),
+  birdcartoon: require('../../assets/images/birdcartoon.jpeg'),
+  hamstercartoon: require('../../assets/images/hamstercartoon.jpeg'),
+  fiscartoon: require('../../assets/images/fishcartoon.jpg'),
+  dogwithowner: require('../../assets/images/dogwithowner.jpeg'),
+  catwithowner: require('../../assets/images/catwithowner.jpeg'),
+  birdwithowner: require('../../assets/images/birderwithowner.jpeg'),
 }
