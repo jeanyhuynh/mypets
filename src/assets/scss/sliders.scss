@@ -1,7 +1,15 @@
+@use "breakpoints.scss" as mediaBreakpoint;
+
 .slide {
   background-color: #000;
-  max-height: 500px;
+  max-height: 115px;
   overflow: hidden;
+  @include mediaBreakpoint.media-breakpoint-sm {
+    max-height: 250px;
+  }
+  @include mediaBreakpoint.media-breakpoint-lg {
+    max-height: 400px;
+  }
 }
 .cus-card {
   .card-box {

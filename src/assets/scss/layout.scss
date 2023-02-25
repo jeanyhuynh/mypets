@@ -1,4 +1,5 @@
 @use "colors.scss" as variableColors;
+@use "breakpoints.scss" as mediaBreakpoint;
 .bg-footer {
   background-color: variableColors.$black-color;
   color: variableColors.$white-color;
@@ -23,10 +24,60 @@
     width: 100%;
   }
 }
-.cus-nav .navbar-nav {
-  > .dropdown {
+.navbar-toggler {
+  &:focus {
+    box-shadow: none;
+  }
+}
+@include mediaBreakpoint.media-breakpoint-lg {
+  .cus-nav .navbar-nav {
+    > .dropdown {
+      > .nav-link {
+        &:before {
+          content: "";
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(0, -100%) rotate(0);
+          transform-origin: top left;
+          transition: 0.4s transform ease-out;
+          z-index: -1;
+          background-color: variableColors.$priamry-color;
+        }
+        &:hover {
+          color: variableColors.$white-color;
+          &:before {
+            transform: translate(0, 0);
+          }
+        }
+      }
+    }
+    .nav-link {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding: 6px 15px;
+      margin: 0 5px;
+      border-radius: 15px;
+      color: variableColors.$gray-color;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      transition: 0.4s transform ease-in-out;
+      z-index: 0;
+      &.active {
+        background-color: variableColors.$priamry-color;
+        color: variableColors.$white-color;
+      }
+    }
     > .nav-link {
-      &:before {
+      &:hover {
+        color: variableColors.$white-color;
+      }
+      &:after {
         content: "";
         display: block;
         height: 100%;
@@ -42,79 +93,43 @@
       }
       &:hover {
         color: variableColors.$white-color;
-        &:before {
+        &::after {
           transform: translate(0, 0);
         }
       }
     }
   }
-  .nav-link {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    padding: 6px 15px;
-    margin: 0 5px;
-    border-radius: 15px;
-    color: variableColors.$gray-color;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    transition: 0.4s transform ease-in-out;
-    z-index: 0;
+  .cus-dropdown {
     &.active {
       background-color: variableColors.$priamry-color;
-      color: variableColors.$white-color;
+      border-radius: 15px;
+
+      .nav-link {
+        color: variableColors.$white-color;
+      }
     }
-  }
-  > .nav-link {
+    .dropdown-menu {
+      border: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: rgba(248, 249, 250, 1);
+      box-shadow: none;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.26s ease;
+    }
+
     &:hover {
-      color: variableColors.$white-color;
-    }
-    &:after {
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translate(0, -100%) rotate(0);
-      transform-origin: top left;
-      transition: 0.4s transform ease-out;
-      z-index: -1;
-      background-color: variableColors.$priamry-color;
-    }
-    &:hover {
-      color: variableColors.$white-color;
-      &::after {
-        transform: translate(0, 0);
+      .dropdown-menu {
+        transform: scaleY(1);
       }
     }
   }
 }
-.cus-dropdown {
-  &.active {
-    background-color: variableColors.$priamry-color;
-    border-radius: 15px;
-
-    .nav-link {
-      color: variableColors.$white-color;
-    }
-  }
-  .dropdown-menu {
-    border: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: rgba(248, 249, 250, 1);
-    box-shadow: none;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 0.26s ease;
-  }
-
-  &:hover {
-    .dropdown-menu {
-      transform: scaleY(1);
-    }
-  }
+.card-bg-img {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

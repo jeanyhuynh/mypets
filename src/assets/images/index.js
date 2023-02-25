@@ -18,4 +18,5 @@ export default {
   dogwithowner: require('../../assets/images/dogwithowner.jpeg'),
   catwithowner: require('../../assets/images/catwithowner.jpeg'),
   birdwithowner: require('../../assets/images/birderwithowner.jpeg'),
+  traindog: require('../../assets/images/traindog.jpeg'),
 }

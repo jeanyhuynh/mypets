@@ -4,7 +4,7 @@ import Icon from './Icon';
 
 const Footer = () => {
   return (
-    <footer className='d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top bg-footer'>
+    <footer className='d-flex flex-wrap justify-content-center align-items-center py-3 mt-auto border-top bg-footer'>
       <div>
         <a href='#'>
           <Image className='logo' src={IMAGES.logo} alt='' />

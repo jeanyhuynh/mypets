@@ -8,9 +8,9 @@ function HeaderPage() {
     setNavDropdownActive(eventKey)
   }
   return (
-    <Navbar bg="light" expand="lg" className='cus-nav' onSelect={handleNavDropdown}>
+    <Navbar bg="light" expand="lg" className='cus-nav' onSelect={handleNavDropdown} sticky="top">
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <Image className='logo' src={IMAGES.logo} alt='' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -20,9 +20,9 @@ function HeaderPage() {
             style={{ maxHeight: '135px' }}
             navbarScroll
           >
-            <Nav.Link className='cus-nav-link' href="#action1" eventKey={2}>Home</Nav.Link>
-            <Nav.Link href="#action2" eventKey={3}>Gallery</Nav.Link>
-            <NavDropdown title="Foods" id="navbarScrollingDropdown" className={[['sub-1', 'sub-2', 'sub-3'].includes(navDropdownActive) && 'active', 'cus-dropdown']} show={true}>
+            <Nav.Link className='cus-nav-link' href="/" eventKey={2}>Home</Nav.Link>
+            <Nav.Link href="/gallery" eventKey={3}>Gallery</Nav.Link>
+            <NavDropdown title="Foods" id="navbarScrollingDropdown" className={[['sub-1', 'sub-2', 'sub-3'].includes(navDropdownActive) && 'active', 'cus-dropdown']} >
               <NavDropdown.Item href="#action3" eventKey={'sub-1'}>Nut</NavDropdown.Item>
               <NavDropdown.Item href="#action4" eventKey={'sub-2'}>
                 Bone
@@ -33,6 +33,9 @@ function HeaderPage() {
             </NavDropdown>
             <Nav.Link href="#action6" eventKey={5}>
               Deal
+            </Nav.Link>
+            <Nav.Link href="/guides" eventKey={6}>
+              Guides
             </Nav.Link>
           </Nav>
           <Form className="d-flex">

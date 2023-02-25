@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/mypets/static/css/main.93b2ad79.css",
+    "main.js": "/mypets/static/js/main.9b3d1ead.js",
+    "static/media/catcartoon.jpg": "/mypets/static/media/catcartoon.a41b2a0e06f6f1988cf2.jpg",
+    "static/media/fishcartoon.jpg": "/mypets/static/media/fishcartoon.42a3dd169d70c4563633.jpg",
+    "static/media/birderwithowner.jpeg": "/mypets/static/media/birderwithowner.fb377999aa4f8ee41982.jpeg",
+    "static/media/fishfood.png": "/mypets/static/media/fishfood.235becfc3ad181a1d176.png",
+    "static/media/petstoy.png": "/mypets/static/media/petstoy.339d90b389238108fdbd.png",
+    "static/media/puppy4.jpeg": "/mypets/static/media/puppy4.3c2022d42fffc715bcc3.jpeg",
+    "static/media/dogcartoon.jpg": "/mypets/static/media/dogcartoon.2ebdcc71fae956b60157.jpg",
+    "static/media/dogandcat.jpeg": "/mypets/static/media/dogandcat.7a6610e1808e500a592a.jpeg",
+    "static/media/dogwithowner.jpeg": "/mypets/static/media/dogwithowner.a435f7abe44859c4a6ac.jpeg",
+    "static/media/catfood.jpg": "/mypets/static/media/catfood.d3e2cd35b54be91be0e4.jpg",
+    "static/media/catwithowner.jpeg": "/mypets/static/media/catwithowner.9289a1b0b5d54fc91a9c.jpeg",
+    "static/media/traindog.jpeg": "/mypets/static/media/traindog.74cbdbb7468c203fbe51.jpeg",
+    "static/media/birdcartoon.jpeg": "/mypets/static/media/birdcartoon.a1ffc874e7a4762b4c0f.jpeg",
+    "static/media/puppy3.jpeg": "/mypets/static/media/puppy3.b68bb2452e5f7aefebde.jpeg",
+    "static/media/cutecat2.jpeg": "/mypets/static/media/cutecat2.4333bc85a1652b36fd75.jpeg",
+    "static/media/hamstercartoon.jpeg": "/mypets/static/media/hamstercartoon.0a90aaee3786059e6e25.jpeg",
+    "static/media/cutecat1.jpeg": "/mypets/static/media/cutecat1.160091d3cf86bb329421.jpeg",
+    "static/media/logo.png": "/mypets/static/media/logo.be8c87ab2583d2ca62e3.png",
+    "static/media/dogfood.jpeg": "/mypets/static/media/dogfood.69a0214d234e476eb02a.jpeg",
+    "index.html": "/mypets/index.html",
+    "main.93b2ad79.css.map": "/mypets/static/css/main.93b2ad79.css.map",
+    "main.9b3d1ead.js.map": "/mypets/static/js/main.9b3d1ead.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93b2ad79.css",
+    "static/js/main.9b3d1ead.js"
+  ]
+}

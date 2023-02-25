@@ -1,0 +1,18 @@
+@keyframes shine {
+  0% {
+    background-position: 10px;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.shine-text {
+  padding: 64px;
+  background: linear-gradient(to right, hsl(600 100% 50%) 20%, hsl(200, 0%, 100%) 30%, hsl(0, 0%, 30%) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+}
